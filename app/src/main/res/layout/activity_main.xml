@@ -9,10 +9,22 @@
     android:orientation="vertical">
 
     <TextView
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
         android:textColor="@color/welcome_textcolor"
         android:id="@+id/helloWorldTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="@string/welcome"
-        android:textSize="@dimen/welcome_textsize" />
+        android:textSize="@dimen/welcome_textsize"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/bug"
+        android:contentDescription="@string/deitel_logo"/>
+
+
 </LinearLayout>
